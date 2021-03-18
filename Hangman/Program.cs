@@ -21,7 +21,7 @@ namespace Hangman
             char ChooseTheTheme = Console.ReadKey().KeyChar;
             int Skaicius = 0;
 
-            if (int.TryParse(ChooseTheTheme.ToString(), out Skaicius)
+            if (int.TryParse(ChooseTheTheme.ToString(), out Skaicius))
             {
                 if (Skaicius<1&&Skaicius>4)
                 {
@@ -32,9 +32,9 @@ namespace Hangman
             {
                 Hangman();
             }
-            else
+            else 
             {
-                Console.WriteLine("Press 1,2,3 or 4 to choose the theme that you would like to play");
+                Console.WriteLine("\nPress 1,2,3 or 4 to choose the theme that you would like to play");
             }
             Console.WriteLine();
             Console.WriteLine("Press any key to close the console");
@@ -53,11 +53,15 @@ namespace Hangman
         public static void Hangman()
         {
             Random RandomWordSelecter = new Random((int)DateTime.Now.Ticks);
+
             int LivesLeft = 5;
             bool Wienner = false;
             string PlayersInput;
+            int LettersThePlayerAlreadyGuessed = 0;
             char Guess;
+
             string LetterGuess = Animals[RandomWordSelecter.Next(0, Animals.Length)];
+
             List<char> GoodGuess = new List<char>();
             List<char> BadGuess = new List<char>();
 
@@ -65,9 +69,6 @@ namespace Hangman
 
             for (int i = 0; i < LetterGuess.Length; i++)
                 LettersThatChangeWhenPlayerGuesses.Append('_');
-
-
-
             while (LivesLeft != 0 && Wienner != true)
             {
                 Console.WriteLine("Human! Time to guess a letter");
@@ -80,13 +81,47 @@ namespace Hangman
                 }
                 else if (BadGuess.Contains(Guess))
                 {
-
+                    Console.WriteLine("You've tried this and it didn't work!");
+                    Console.WriteLine("You can do better than this guesss: ", Guess);
+                    continue;
                 }
+                if (LetterGuess.Contains(Guess))
+                {
+                    GoodGuess.Add(Guess);
+                    for (int i = 0; i < LetterGuess.Length; i++)
+                    {
+                        if (LetterGuess[i] == Guess)
+                        {
+                            LettersThatChangeWhenPlayerGuesses[i] = LetterGuess[i];
+                            LettersThePlayerAlreadyGuessed++;
+                        }
+                    }
+                    if (LettersThePlayerAlreadyGuessed == LetterGuess.Length)
+                        Wienner = true;
                 }
+                else
+                {
+                    BadGuess.Add(Guess);
+                    Console.WriteLine($"Bad guess mother N*gger! There was no {Guess} in word!");
+                    Console.WriteLine("RACIST BASTARD! THE WORD WAS NAGGER!\nNOW YOU DESERVE A HANGING!!!");
+                    LivesLeft--;
+                }
+                Console.WriteLine(LettersThatChangeWhenPlayerGuesses.ToString());
+            }
+            if (Wienner)
+            {
+                Console.WriteLine("YOU WON!");
+                Console.WriteLine($"Email me \"youmama@gmail.com\" your bank account number, ID card photo," +
+                    $"your first pets name");
+            }
+            else
+            {
+                Console.WriteLine("Yo");
             }
         }
     }
 }
+
 /*
             Console.WriteLine(" --------|");
             Console.WriteLine("|\n|\n|\n|\n|\n|\n|");
