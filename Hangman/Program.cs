@@ -10,7 +10,6 @@ namespace Hangman
     {
         public static void ChoosingTheTheme()
         {
-            //Fix the Animals + LithuanianCities + Vardai + Valstybes
             string[] Animals = { "Elephant", "Lion", "Tiger", "Koala", "Shark",
             "Whale", "Octopus", "Snake", "Kangaroo", "Bear", "Lizard", "Squirrel","Cow",
             "Crocodile", "Pelican", "Dolphin", "Bat", "Frog", "Badger","Wolf","Cow", "Ox",
@@ -65,7 +64,6 @@ namespace Hangman
             int LettersThePlayerAlreadyGuessed = 0;
             char Guess;
 
-            //Fix the Animals + LithuanianCities + Vardai + Valstybes
             string LetterGuess = Animals[RandomWordSelecter.Next(0, Animals.Length)];
 
             List<char> GoodGuess = new List<char>();
@@ -127,14 +125,16 @@ namespace Hangman
         }
     }
 }
-
 /*
             Console.WriteLine(" --------|");
             Console.WriteLine("|\n|\n|\n|\n|\n|\n|");
             Console.WriteLine("-----");
 
-
 TRY PARSE 
 KARTOTI CIKLE IVESTI 
 FIX THIS SHIT 21-29 EULUTES
+
+            //LOOKS GOOD DOESNT WORK
+            //Fix the Animals + LithuanianCities + Vardai + Valstybes
+
 */
