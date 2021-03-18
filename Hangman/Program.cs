@@ -19,8 +19,14 @@ namespace Hangman
             Console.WriteLine("4. Animals");
             Console.WriteLine("Press 1,2,3 or 4 to choose the theme that you would like to play");
             int ChooseTheTheme = int.Parse(Console.ReadLine());
-            Hangman();
-            
+            if (ChooseTheTheme==1|| ChooseTheTheme==2|| ChooseTheTheme==3|| ChooseTheTheme==4)
+            {
+                Hangman();
+            }
+            else
+            {
+                Console.WriteLine("Press 1,2,3 or 4 to choose the theme that you would like to play");
+            }
             Console.WriteLine();
             Console.WriteLine("Press any key to close the console");
             Console.ReadKey();
@@ -38,27 +44,26 @@ namespace Hangman
         public static void Hangman()
         {
             Random RandomWordSelecter = new Random((int)DateTime.Now.Ticks);
-
             int LivesLeft = 5;
             bool Wienner = false;
-            int PlayersInput;
+            string PlayersInput;
             char Guess;
-            string Input;
             string LetterGuess = Animals[RandomWordSelecter.Next(0, Animals.Length)];
+            List<char> GoodGuess = new List<char>();
+            List<char> BadGuess = new List<char>();
 
-            List<char> GoodGuess = new List<char>;
-            List<char> BadGuess = new List<char>;
+            StringBuilder LettersThatChangeWhenPlayerGuesses = new StringBuilder(LetterGuess.Length);
 
             for (int i = 0; i < LetterGuess.Length; i++)
-            {
+                displayToPlayer.Append('_');
 
-            }
+
 
             while (LivesLeft != 0 && Wienner != true)
             {
                 Console.WriteLine("Human! Time to guess a letter");
-                Input = Console.ReadLine();
-                Guess = Input[0];
+                PlayersInput = Console.ReadLine();
+                Guess = PlayersInput[0];
                 if ()
                 {
 
