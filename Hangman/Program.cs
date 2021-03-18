@@ -64,9 +64,9 @@ namespace Hangman
                 Console.WriteLine("Human! Time to guess a letter");
                 PlayersInput = Console.ReadLine();
                 Guess = PlayersInput[0];
-                if ()
+                if (GoodGuess.Contains(Guess))
                 {
-
+                    Console.WriteLine("You cannot try to guess this letter again as it was already guessed right ");
                 }
             }
         }
