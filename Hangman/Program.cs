@@ -24,10 +24,6 @@ namespace Hangman
             Console.WriteLine();
             Console.WriteLine("Press any key to close the console");
             Console.ReadKey();
-
-            Console.WriteLine(" --------|");
-            Console.WriteLine("|\n|\n|\n|\n|\n|\n|");
-            Console.WriteLine("-----");
         }
         public static string[] Animals = { "Elephant", "Lion", "Tiger", "Koala", "Shark",
             "Whale", "Octopus", "Snake", "Kangaroo", "Bear", "Lizard", "Squirrel","Cow",
@@ -43,13 +39,14 @@ namespace Hangman
         {
             Random RandomWordSelecter = new Random((int)DateTime.Now.Ticks);
 
-
             int LivesLeft = 5;
             bool Wienner = false;
             int PlayersInput;
             char Guess;
+            string Input;
+            string LetterGuess = wordBank[random.Next(0, wordBank.Length)];
 
-            if ( == 1|| )
+            for (int i = 0; i < length; i++)
             {
 
             }
@@ -61,3 +58,8 @@ namespace Hangman
         }
     }
 }
+/*
+            Console.WriteLine(" --------|");
+            Console.WriteLine("|\n|\n|\n|\n|\n|\n|");
+            Console.WriteLine("-----");
+*/
