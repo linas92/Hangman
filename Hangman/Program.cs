@@ -46,14 +46,23 @@ namespace Hangman
             string Input;
             string LetterGuess = Animals[RandomWordSelecter.Next(0, Animals.Length)];
 
-            for (int i = 0; i < length; i++)
+            List<char> GoodGuess = new List<char>;
+            List<char> BadGuess = new List<char>;
+
+            for (int i = 0; i < LetterGuess.Length; i++)
             {
 
             }
 
             while (LivesLeft != 0 && Wienner != true)
             {
+                Console.WriteLine("Human! Time to guess a letter");
+                Input = Console.ReadLine();
+                Guess = Input[0];
+                if ()
+                {
 
+                }
             }
         }
     }
