@@ -10,12 +10,12 @@ namespace Hangman
     {
         static void Main(string[] args)
         {
-            Kartuves();
+            Hangman();
             Console.WriteLine();
             Console.WriteLine("Press any key to close the console");
             Console.ReadKey();
         }
-        public static void Kartuves()
+        public static void Hangman()
         {
 
         }
