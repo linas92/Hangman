@@ -44,7 +44,7 @@ namespace Hangman
             int PlayersInput;
             char Guess;
             string Input;
-            string LetterGuess = wordBank[random.Next(0, wordBank.Length)];
+            string LetterGuess = Animals[RandomWordSelecter.Next(0, Animals.Length)];
 
             for (int i = 0; i < length; i++)
             {
