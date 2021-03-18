@@ -8,7 +8,7 @@ namespace Hangman
 {
     class Program
     {
-        public static string()
+        public static string(string Animal, string LithuanianCities)
             {
 
             }
