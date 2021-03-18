@@ -8,6 +8,10 @@ namespace Hangman
 {
     class Program
     {
+        public static string()
+            {
+
+            }
         static void Main(string[] args)
         {
             Console.WriteLine("Hello and welcome to the game called Hangman");
@@ -30,7 +34,14 @@ namespace Hangman
         public static void Hangman()
         {
             Random RandomWordSelecter = new Random((int)DateTime.Now.Ticks);
-            readonly string[] = { ""}
+
+            string[] Animals = { "Elephant", "Lion", "Tiger", "Koala", "Shark", "Whale",
+            "Octopus", "Snake", "Kangaroo", "Bear", "Lizard", "Squirrel","Cow",
+            "Crocodile", "Pelican", "Dolphin", "Bat", "Frog", "Badger","Wolf","Cow",
+            "Ox", "Reindeer", "Fox", "Bat", "Sparrow", "Chimpanzee"};
+            string[]LithuanianCities = { "Kaunas", "Vilnius", "Marijampole", "Vilkaviskis",
+                "Alytus", "Jieznas", "Lazdijai", "Pakruojis", "Sakiai", };
+
             int LivesLeft = 5;
             bool Wienner = false;
             int PlayersInput;
@@ -49,65 +60,7 @@ namespace Hangman
     }
 }
 
-/*ANIMALS:
-
-Elephant
-Lion
-Tiger
-Koala
-Shark
-Whale
-Octopus
-Snake
-Kangaroo
-Bear
-Lizard
-Squirrel
-Cow
-Crocodile
-Pelican
-Dolphin
-Bat
-Frog
-Badger
-Wolf
-Ox
-Reindeer
-Fox
-Sparrow
-Chimpanzee
-Pigeon
-Raven
-Ant
-Panda
-Walrus
-Spider
-Hedgehong
-Sheep
-Coyote
-Monkey
-Peacock
-Otter
-Turtle
-Hippopotamus
-Rabbit
-Giraffe
-Crow
-Ostrich
-Parrot
-Jellyfish
-Horse
-Mouse
-Chicken
-Deer
-Turkey
-Hamster
-Duck
-Shrimp
-Clams
-Goat
-Crab
-
+/*
 VARDAI:
 Tomas
 Darius
@@ -121,16 +74,16 @@ Inga
 Pamela
 
 LIETUVOS MIESTAI:
-Kaunas
-Vilnius
-Marijampole
-Vilkaviskis
-Alytus
-Elektrenai
-Jieznas
-Lazdijai
-Pakruojis
-Sakiai
+
+
+
+
+
+
+
+
+
+
 
 VALSTYBES:
 Australija
