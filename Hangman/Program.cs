@@ -55,7 +55,7 @@ namespace Hangman
             StringBuilder LettersThatChangeWhenPlayerGuesses = new StringBuilder(LetterGuess.Length);
 
             for (int i = 0; i < LetterGuess.Length; i++)
-                displayToPlayer.Append('_');
+                .Append('_');
 
 
 
