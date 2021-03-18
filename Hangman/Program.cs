@@ -40,16 +40,19 @@ namespace Hangman
             Console.WriteLine("Press any key to close the console");
             Console.ReadKey();
         }
-        public static string[] Animals = { "Elephant", "Lion", "Tiger", "Koala", "Shark",
+        public static Skaicius()
+        {
+        string[] Animals = { "Elephant", "Lion", "Tiger", "Koala", "Shark",
             "Whale", "Octopus", "Snake", "Kangaroo", "Bear", "Lizard", "Squirrel","Cow",
             "Crocodile", "Pelican", "Dolphin", "Bat", "Frog", "Badger","Wolf","Cow", "Ox",
             "Reindeer", "Fox", "Bat", "Sparrow", "Chimpanzee"};
-        public static string[] LithuanianCities = { "Kaunas", "Vilnius", "Marijampole",
+        string[] LithuanianCities = { "Kaunas", "Vilnius", "Marijampole",
             "Vilkaviskis", "Alytus", "Jieznas", "Lazdijai", "Pakruojis", "Sakiai", };
-        public static string[] Vardai = { "Tomas", "Darius", "Alfonsas", "Karolis", "Edgaras",
+        string[] Vardai = { "Tomas", "Darius", "Alfonsas", "Karolis", "Edgaras",
             "Margarita", "Simona", "Onute", "Inga", "Pamela"};
-        public static string[] Valstybes = { "Australija", "Bulgarija", "Danija", "Filipinai",
+        string[] Valstybes = { "Australija", "Bulgarija", "Danija", "Filipinai",
             "Japonija", "Kanada", "Maldyvai", "Norvegija", "Prancūzija", "Senegalas"};
+        }
         public static void Hangman()
         {
             Random RandomWordSelecter = new Random((int)DateTime.Now.Ticks);
