@@ -22,7 +22,9 @@ namespace Hangman
             Console.WriteLine("3. World countries");
             Console.WriteLine("4. Animals");
             Console.WriteLine("Press 1,2,3 or 4 to choose the theme that you would like to play");
+            int ChooseTheTheme = int.Parse(Console.ReadLine());
             Hangman();
+            
             Console.WriteLine();
             Console.WriteLine("Press any key to close the console");
             Console.ReadKey();
