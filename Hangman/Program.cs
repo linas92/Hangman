@@ -18,7 +18,16 @@ namespace Hangman
             Console.WriteLine("3. World countries");
             Console.WriteLine("4. Animals");
             Console.WriteLine("Press 1,2,3 or 4 to choose the theme that you would like to play");
-            int ChooseTheTheme = int.Parse(Console.ReadLine());
+            char ChooseTheTheme = Console.ReadKey().KeyChar;
+            int Skaicius = 0;
+
+            if (int.TryParse(ChooseTheTheme.ToString(), out Skaicius)
+            {
+                if (Skaicius<1&&Skaicius>4)
+                {
+                    Console.WriteLine("You chose wrong. Do it again");
+                }
+            }
             if (ChooseTheTheme==1|| ChooseTheTheme==2|| ChooseTheTheme==3|| ChooseTheTheme==4)
             {
                 Hangman();
@@ -67,6 +76,12 @@ namespace Hangman
                 if (GoodGuess.Contains(Guess))
                 {
                     Console.WriteLine("You cannot try to guess this letter again as it was already guessed right ");
+                    continue;
+                }
+                else if (BadGuess.Contains(Guess))
+                {
+
+                }
                 }
             }
         }
@@ -76,4 +91,9 @@ namespace Hangman
             Console.WriteLine(" --------|");
             Console.WriteLine("|\n|\n|\n|\n|\n|\n|");
             Console.WriteLine("-----");
+
+
+TRY PARSE 
+KARTOTI CIKLE IVESTI 
+FIX THIS SHIT 21-29 EULUTES
 */
