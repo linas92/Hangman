@@ -15,7 +15,7 @@ namespace Hangman
             Console.WriteLine("There are 4 themes you can choose from");
             Console.WriteLine("1. Lithuanian names");
             Console.WriteLine("2. Lithuanian cities");
-            Console.WriteLine("3. World countries");
+            Console.WriteLine("3. World country names");
             Console.WriteLine("4. Animals");
             Console.WriteLine("Press 1,2,3 or 4 to choose the theme that you would like to play");
             char ChooseTheTheme = Console.ReadKey().KeyChar;
@@ -32,7 +32,7 @@ namespace Hangman
             {
                 Hangman();
             }
-            else 
+            else
             {
                 Console.WriteLine("\nPress 1,2,3 or 4 to choose the theme that you would like to play");
             }
