@@ -111,12 +111,12 @@ namespace Hangman
             if (Wienner)
             {
                 Console.WriteLine("YOU WON!");
-                Console.WriteLine($"Email me \"youmama@gmail.com\" your bank account number, ID card photo," +
-                    $"your first pets name");
+                Console.WriteLine($"Email me \"yo_mama@gmail.com\" your bank account number, ID card photo," +
+                    $"your first pets name, first school and you will get 1,000,000$ dollars!");
             }
             else
             {
-                Console.WriteLine("Yo");
+                Console.WriteLine("You lost you! Back to school");
             }
         }
     }
