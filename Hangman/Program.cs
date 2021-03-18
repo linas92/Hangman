@@ -8,6 +8,20 @@ namespace Hangman
 {
     class Program
     {
+        public static void ChoosingTheTheme()
+        {
+            //Fix the Animals + LithuanianCities + Vardai + Valstybes
+            string[] Animals = { "Elephant", "Lion", "Tiger", "Koala", "Shark",
+            "Whale", "Octopus", "Snake", "Kangaroo", "Bear", "Lizard", "Squirrel","Cow",
+            "Crocodile", "Pelican", "Dolphin", "Bat", "Frog", "Badger","Wolf","Cow", "Ox",
+            "Reindeer", "Fox", "Bat", "Sparrow", "Chimpanzee"};
+            string[] LithuanianCities = { "Kaunas", "Vilnius", "Marijampole",
+            "Vilkaviskis", "Alytus", "Jieznas", "Lazdijai", "Pakruojis", "Sakiai", };
+            string[] Vardai = { "Tomas", "Darius", "Alfonsas", "Karolis", "Edgaras",
+            "Margarita", "Simona", "Onute", "Inga", "Pamela"};
+            string[] Valstybes = { "Australija", "Bulgarija", "Danija", "Filipinai",
+            "Japonija", "Kanada", "Maldyvai", "Norvegija", "Prancūzija", "Senegalas"};
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Hello and welcome to the game called Hangman");
@@ -22,6 +36,7 @@ namespace Hangman
             int Skaicius = 0;
 
             if (int.TryParse(ChooseTheTheme.ToString(), out Skaicius))
+            //LOOKS GOOD DOESNT WORK
             {
                 if (Skaicius<1&&Skaicius>4)
                 {
@@ -40,19 +55,6 @@ namespace Hangman
             Console.WriteLine("Press any key to close the console");
             Console.ReadKey();
         }
-        public static Skaicius()
-        {
-        string[] Animals = { "Elephant", "Lion", "Tiger", "Koala", "Shark",
-            "Whale", "Octopus", "Snake", "Kangaroo", "Bear", "Lizard", "Squirrel","Cow",
-            "Crocodile", "Pelican", "Dolphin", "Bat", "Frog", "Badger","Wolf","Cow", "Ox",
-            "Reindeer", "Fox", "Bat", "Sparrow", "Chimpanzee"};
-        string[] LithuanianCities = { "Kaunas", "Vilnius", "Marijampole",
-            "Vilkaviskis", "Alytus", "Jieznas", "Lazdijai", "Pakruojis", "Sakiai", };
-        string[] Vardai = { "Tomas", "Darius", "Alfonsas", "Karolis", "Edgaras",
-            "Margarita", "Simona", "Onute", "Inga", "Pamela"};
-        string[] Valstybes = { "Australija", "Bulgarija", "Danija", "Filipinai",
-            "Japonija", "Kanada", "Maldyvai", "Norvegija", "Prancūzija", "Senegalas"};
-        }
         public static void Hangman()
         {
             Random RandomWordSelecter = new Random((int)DateTime.Now.Ticks);
@@ -63,6 +65,7 @@ namespace Hangman
             int LettersThePlayerAlreadyGuessed = 0;
             char Guess;
 
+            //Fix the Animals + LithuanianCities + Vardai + Valstybes
             string LetterGuess = Animals[RandomWordSelecter.Next(0, Animals.Length)];
 
             List<char> GoodGuess = new List<char>();
