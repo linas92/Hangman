@@ -46,9 +46,9 @@ namespace Hangman
             "Reindeer", "Fox", "Bat", "Sparrow", "Chimpanzee"};
         public static string[] LithuanianCities = { "Kaunas", "Vilnius", "Marijampole",
             "Vilkaviskis", "Alytus", "Jieznas", "Lazdijai", "Pakruojis", "Sakiai", };
-        public string[] Vardai = { "Tomas", "Darius", "Alfonsas", "Karolis", "Edgaras",
+        public static string[] Vardai = { "Tomas", "Darius", "Alfonsas", "Karolis", "Edgaras",
             "Margarita", "Simona", "Onute", "Inga", "Pamela"};
-        public string[] Valstybes = { "Australija", "Bulgarija", "Danija", "Filipinai",
+        public static string[] Valstybes = { "Australija", "Bulgarija", "Danija", "Filipinai",
             "Japonija", "Kanada", "Maldyvai", "Norvegija", "Prancūzija", "Senegalas"};
         public static void Hangman()
         {
