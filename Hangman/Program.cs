@@ -8,10 +8,17 @@ namespace Hangman
 {
     class Program
     {
-        public static string(string Animal, string LithuanianCities)
-            {
+        public static string[] Animals = { "Elephant", "Lion", "Tiger", "Koala", "Shark", 
+            "Whale", "Octopus", "Snake", "Kangaroo", "Bear", "Lizard", "Squirrel","Cow", 
+            "Crocodile", "Pelican", "Dolphin", "Bat", "Frog", "Badger","Wolf","Cow", "Ox", 
+            "Reindeer", "Fox", "Bat", "Sparrow", "Chimpanzee"};
+        public static string[] LithuanianCities = { "Kaunas", "Vilnius", "Marijampole", 
+            "Vilkaviskis", "Alytus", "Jieznas", "Lazdijai", "Pakruojis", "Sakiai", };
+        public string [] Vardai = { "Tomas", "Darius", "Alfonsas", "Karolis", "Edgaras",
+            "Margarita", "Simona", "Onute", "Inga", "Pamela"};
+        public string [] Valstybes = { "Australija", "Bulgarija", "Danija", "Filipinai",
+            "Japonija", "Kanada", "Maldyvai", "Norvegija", "Prancūzija", "Senegalas"};
 
-            }
         static void Main(string[] args)
         {
             Console.WriteLine("Hello and welcome to the game called Hangman");
@@ -37,12 +44,6 @@ namespace Hangman
         {
             Random RandomWordSelecter = new Random((int)DateTime.Now.Ticks);
 
-            string[] Animals = { "Elephant", "Lion", "Tiger", "Koala", "Shark", "Whale",
-            "Octopus", "Snake", "Kangaroo", "Bear", "Lizard", "Squirrel","Cow",
-            "Crocodile", "Pelican", "Dolphin", "Bat", "Frog", "Badger","Wolf","Cow",
-            "Ox", "Reindeer", "Fox", "Bat", "Sparrow", "Chimpanzee"};
-            string[]LithuanianCities = { "Kaunas", "Vilnius", "Marijampole", "Vilkaviskis",
-                "Alytus", "Jieznas", "Lazdijai", "Pakruojis", "Sakiai", };
 
             int LivesLeft = 5;
             bool Wienner = false;
@@ -61,41 +62,3 @@ namespace Hangman
         }
     }
 }
-
-/*
-VARDAI:
-Tomas
-Darius
-Alfonsas
-Karolis
-Edgaras
-Margarita
-Simona
-Onute
-Inga
-Pamela
-
-LIETUVOS MIESTAI:
-
-
-
-
-
-
-
-
-
-
-
-VALSTYBES:
-Australija
-Bulgarija
-Danija
-Filipinai
-Japonija
-Kanada
-Maldyvai
-Norvegija
-Prancūzija
-Senegalas
-*/
