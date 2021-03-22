@@ -49,8 +49,6 @@ namespace Hangman
 
             Random RandomWordSelecter = new Random((int)DateTime.Now.Ticks);
 
-            var Random = new Random();
-
             string LetterGuess = Theme()[RandomWordSelecter.Next(0, Theme().Length)]; //DOESN"T WORK
 
             string WordsCapsLocked = LetterGuess.ToUpper();
