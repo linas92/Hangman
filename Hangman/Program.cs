@@ -27,16 +27,16 @@ namespace Hangman
         } // LOOKS GREAT DOESN"T WORK
         public static void Theme()
         {
-            List<string> LithuanianNames = new List<string> { "Tomas", "Darius", "Alfonsas", "Karolis", "Edgaras",
+            string []LithuanianNames = { "Tomas", "Darius", "Alfonsas", "Karolis", "Edgaras",
             "Margarita", "Simona", "Onute", "Olga", "Pamela"};
 
-            List<string> LithuanianCities = new List<string> { "Kaunas", "Vilnius", "Marijampole",
+            string []LithuanianCities = { "Kaunas", "Vilnius", "Marijampole",
                     "Vilkaviskis", "Alytus", "Jieznas", "Lazdijai", "Pakruojis", "Sakiai"};
 
-            List<string> WorldCountryNames = new List<string> { "Australija", "Bulgarija", "Danija", "Filipinai",
+            string []WorldCountryNames = { "Australija", "Bulgarija", "Danija", "Filipinai",
             "Japonija", "Kanada", "Maldyvai", "Norvegija", "Prancūzija", "Senegalas"};
 
-            List<string> Animals = new List<string> { "Elephant", "Lion", "Tiger", "Koala", "Shark",
+            string []Animals = { "Elephant", "Lion", "Tiger", "Koala", "Shark",
                     "Whale", "Octopus", "Snake", "Kangaroo", "Bear", "Lizard", "Squirrel","Cow",
                     "Crocodile", "Pelican", "Dolphin", "Bat", "Frog", "Badger","Wolf","Cow", "Ox",
                     "Reindeer", "Fox", "Bat", "Sparrow", "Chimpanzee"};
